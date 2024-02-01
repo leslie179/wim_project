@@ -1,0 +1,16 @@
+span {
+    color: #1EAFDE;
+}
+    
+a.home-link {
+    background-color: #1EAFDE;
+    color:red;
+    margin: 3%;
+    padding: 3%;
+}
+
+#home-icon {
+    max-height:5px;
+    max-width: 5px;
+    
+}
