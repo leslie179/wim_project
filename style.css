@@ -15,39 +15,59 @@ a.home-link {
     
 }
 
+span {
+    color: #1EAFDE;
+}
+   
+
+
+a.home-link {
+    background-color: #1EAFDE;
+    color:red;
+    margin: 3%;
+    padding: 3%;
+}
+
+#home-icon {
+    max-height:5px;
+    max-width: 5px;
+    
+}
+
 .metro-style-box-text {
   display: block;
   border: 0 solid #186AA2;
-  border-left-width: 8px;
+  border-left-width: .5rem;
   background-color: #EFF5FC;
-  padding: 10px 40px;
-  font-size: 15px;
+  padding: 1% 4%;
+  font-size: 1em;
   font-weight: bold;
   font-family: /* Your font family */;
-  margin: 1px;
+  margin:  .2%;
 }
 
-
-.retina-ready-box-text{
-	display: block;
+.retina-ready-box-text {
+  display: block;
   border: 0 solid #DF6160;
-  border-left-width: 8px;
+  border-left-width: .5rem;
   background-color: #EFF5FC;
-  padding: 10px 40px;
-  font-size: 15px;
+  padding: 1% 4%;
+  font-size: 1em;
   font-weight: bold;
   font-family: /* Your font family */;
-  margin: 1px; 
+  margin:  .2%;
 }
 
-.responsive-design-box-text{
-	display: block;
+.responsive-design-box-text {
+  display: block;
   border: 0 solid #FCBB00;
-  border-left-width: 8px;
+  border-left-width: .5rem;
   background-color: #EFF5FC;
-  padding: 10px 40px;
-  font-size: 15px;
+  padding: 1% 4%;
+  font-size: 1em;
   font-weight: bold;
   font-family: /* Your font family */;
-  margin: 1px;
+  margin:  .2%;
 }
+
+
