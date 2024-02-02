@@ -39,11 +39,11 @@ a.home-link {
   border: 0 solid #186AA2;
   border-left-width: .5rem;
   background-color: #EFF5FC;
-  padding: 1% 4%;
-  font-size: 1em;
+  padding: .6rem 2.6rem;
+  font-size: 1rem;
   font-weight: bold;
   font-family: /* Your font family */;
-  margin:  .2%;
+  margin:  .2rem;
 }
 
 .retina-ready-box-text {
@@ -51,11 +51,11 @@ a.home-link {
   border: 0 solid #DF6160;
   border-left-width: .5rem;
   background-color: #EFF5FC;
-  padding: 1% 4%;
-  font-size: 1em;
+  padding: .6rem 2.6rem;
+  font-size: 1rem;
   font-weight: bold;
   font-family: /* Your font family */;
-  margin:  .2%;
+  margin:  .2rem;
 }
 
 .responsive-design-box-text {
@@ -63,11 +63,10 @@ a.home-link {
   border: 0 solid #FCBB00;
   border-left-width: .5rem;
   background-color: #EFF5FC;
-  padding: 1% 4%;
-  font-size: 1em;
+  padding: .6rem 2.6rem;
+  font-size: 1rem;
   font-weight: bold;
   font-family: /* Your font family */;
-  margin:  .2%;
+  margin:  .2rem;
 }
-
 
