@@ -69,4 +69,89 @@ a.home-link {
   font-family: /* Your font family */;
   margin:  .2rem;
 }
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header"
+    "minion"
+    "middleTitle"
+    "things"
+    "wordBlock"
+    "lately"
+    "latestProject"
+    "thingsAbove"
+    "logosBar"
+    "footer";
+}
+
+header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 10px;
+}
+
+.minion-banner {
+  grid-area: minion;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.middle-title {
+  grid-area: middleTitle;
+}
+
+.things-that-we-do,
+.word-block,
+.Whats-up-lately,
+.our-latest-project,
+.Thingsofabove,
+.logos-bar {
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.things-that-we-do,
+.our-latest-project,
+.Whats-up-lately,
+.Thingsofabove {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.our-latest-project {
+  grid-area: latestProject;
+}
+
+.Thingsofabove {
+  grid-area: thingsAbove;
+}
+
+.logos-bar {
+  grid-area: logosBar;
+}
+
+footer {
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.footer-block-1,
+.footer-block-2,
+.footer-block-3,
+.footer-block-4 {
+  display: flex;
+  flex-direction: column;
+}
+
 
