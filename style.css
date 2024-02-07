@@ -69,6 +69,7 @@ a.home-link {
   font-family: /* Your font family */;
   margin:  .2rem;
 }
+
 body {
   display: grid;
   grid-template-columns: 1fr;
