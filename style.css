@@ -1,38 +1,57 @@
 span {
     color: #1EAFDE;
 }
-    
-a.home-link {
-    background-color: #1EAFDE;
-    color:red;
-    margin: 3%;
-    padding: 3%;
-}
 
-#home-icon {
-    max-height:5px;
-    max-width: 5px;
-    
+.company-logo{
+  padding-left: 140%;
+  padding-right: 20%;
+  padding-top: 25%;
+  max-height: 200%;
 }
-
-span {
-    color: #1EAFDE;
-}
-   
 
 
 a.home-link {
-    background-color: #1EAFDE;
-    color:red;
-    margin: 3%;
-    padding: 3%;
+  background-color: #25C389;
+  color: red;
+  margin: 0% 110%;
+  padding: 6% 0%;
+  height: 70%;
+  width: 50%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column; 
 }
 
-#home-icon {
-    max-height:5px;
-    max-width: 5px;
-    
+.icon-wrapper {
+  width: 30px; 
+  height: 100px; 
+  border-radius: 50%; 
+  background-color: #1EAFDE; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.text-wrapper {
+  margin-top: 40px; 
+}
+
+.left-arrow {
+  position: absolute; 
+  left: 3%; 
+  top: 50%;
+  transform: translateY(-50%); 
+}
+
+.right-arrow {
+  position: absolute; 
+  right: 3%; 
+  top: 50%; 
+  transform: translateY(-50%); 
+}
+
+
 
 .metro-style-box-text {
   display: block;
@@ -70,6 +89,15 @@ a.home-link {
   margin:  .2rem;
 }
 
+.middle-title{
+  text-align: center;
+  padding: 1% 0%;
+}
+
+.things-that-we-do{
+  text-align: center;
+  padding: 2% 0%;
+}
 body {
   display: grid;
   grid-template-columns: 1fr;
@@ -82,6 +110,7 @@ body {
     "wordBlock"
     "lately"
     "latestProject"
+    "things-that-we-do"
     "thingsAbove"
     "logosBar"
     "footer";
@@ -121,6 +150,15 @@ header {
   padding: 20px;
 }
 
+.word-block{
+  display: grid;
+  grid-template-columns: 1fr 1f 1fr 1fr 
+}
+
+p{
+  font-size: x-small;
+}
+
 .things-that-we-do,
 .our-latest-project,
 .Whats-up-lately,
@@ -153,6 +191,21 @@ footer {
 .footer-block-4 {
   display: flex;
   flex-direction: column;
+}
+
+.home-link .home-icon {
+  max-height: 20px;
+}
+
+header img {
+  max-height: 50px; 
+  max-width: 100px; 
+}
+
+.banner-image{
+max-width: 1000%;
+width: 310%;
+justify-content: left;
 }
 
 
