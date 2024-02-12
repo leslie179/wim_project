@@ -61,7 +61,6 @@ a.home-link {
   padding: .6rem 2.6rem;
   font-size: 1rem;
   font-weight: bold;
-  font-family: /* Your font family */;
   margin:  .2rem;
 }
 
@@ -73,7 +72,6 @@ a.home-link {
   padding: .6rem 2.6rem;
   font-size: 1rem;
   font-weight: bold;
-  font-family: /* Your font family */;
   margin:  .2rem;
 }
 
@@ -85,7 +83,6 @@ a.home-link {
   padding: .6rem 2.6rem;
   font-size: 1rem;
   font-weight: bold;
-  font-family: /* Your font family */;
   margin:  .2rem;
 }
 
@@ -94,10 +91,16 @@ a.home-link {
   padding: 1% 0%;
 }
 
+.middle-title,
+.things-that-we-doo {
+    text-align: center;
+}
+
 .things-that-we-do{
   text-align: center;
   padding: 2% 0%;
 }
+
 body {
   display: grid;
   grid-template-columns: 1fr;
@@ -136,9 +139,7 @@ header {
   align-items: center;
 }
 
-.middle-title {
-  grid-area: middleTitle;
-}
+
 
 .things-that-we-do,
 .word-block,
@@ -206,6 +207,138 @@ header img {
 max-width: 1000%;
 width: 310%;
 justify-content: left;
+}
+
+.footer-block-1 {
+  #rectangle {
+    width: 200px;
+    height: 100px;
+    background: red;
+  }
+  #triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid red;
+  }
+}
+footer section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-block-1,
+.footer-block-2,
+.footer-block-3,
+.footer-block-4 {
+  flex: 1;
+  margin: 0 10px;
+}
+
+/* Media query for screens larger than 768px (adjust the breakpoint as needed) */
+@media screen and (min-width: 768px) {
+  .footer-block-1,
+  .footer-block-2,
+  .footer-block-3,
+  .footer-block-4 {
+    flex: 0 0 23%; /* Adjust the percentage based on your layout preferences */
+  }
+}
+
+.rectangle1 {
+  width: 250px;
+  height: 3px;
+  background: green;
+}
+
+.triangle-down-1 {
+  width: 0px;
+      height: 2px;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-top: 8px solid green;
+      margin-left: 0.5cm;
+}
+
+.rectangle2 {
+  width: 250px;
+  height: 3px;
+  background: yellow;
+}
+
+.triangle-down-2 {
+  width: 0px;
+      height: 2px;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-top: 8px solid yellow;
+      margin-left: 0.5cm;
+}
+
+.rectangle3 {
+  width: 250px;
+  height: 3px;
+  background: red;
+}
+
+.triangle-down-3 {
+  width: 0px;
+      height: 2px;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-top: 8px solid red;
+      margin-left: 0.5cm;
+}
+
+.rectangle4 {
+  width: 250px;
+  height: 3px;
+  background: blue;
+}
+
+.triangle-down-4 {
+  width: 0px;
+      height: 2px;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-top: 8px solid blue;
+      margin-left: 0.5cm;
+}
+
+.footer-block-2 {
+  text-align: center;
+}
+
+.photo-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.flickr-photos {
+  width: 30%; 
+  margin: 10px; 
+  border: 1px solid #ddd; 
+  box-sizing: border-box;
+}
+
+/* CSS */
+
+.footer-block-3 {
+  text-align: center;
+}
+
+.tweet-container {
+  display: flex;
+  align-items: center;
+}
+
+.twitter-icon-circle {
+  width: 30px; 
+  height: 30px; 
+  margin-right: 10px; 
 }
 
 
