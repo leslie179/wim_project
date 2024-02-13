@@ -6,16 +6,15 @@ span {
   padding-left: 140%;
   padding-right: 20%;
   padding-top: 25%;
-  max-height: 200%;
+  max-width: 10em;
 }
-
 
 a.home-link {
   background-color: #25C389;
   color: red;
   margin: 0% 110%;
-  padding: 6% 0%;
-  height: 70%;
+  padding: 10% 0%;
+  height: 80%;
   width: 50%;
   justify-content: center;
   display: flex;
@@ -61,6 +60,7 @@ a.home-link {
   padding: .6rem 2.6rem;
   font-size: 1rem;
   font-weight: bold;
+  font-family: /* Your font family */;
   margin:  .2rem;
 }
 
@@ -72,6 +72,7 @@ a.home-link {
   padding: .6rem 2.6rem;
   font-size: 1rem;
   font-weight: bold;
+  font-family: /* Your font family */;
   margin:  .2rem;
 }
 
@@ -83,22 +84,99 @@ a.home-link {
   padding: .6rem 2.6rem;
   font-size: 1rem;
   font-weight: bold;
+  font-family: /* Your font family */;
   margin:  .2rem;
 }
 
-.middle-title{
+.middle-title h1 {
   text-align: center;
-  padding: 1% 0%;
+  padding: 0%;
+  margin-bottom: 1%; /* Adjust the margin bottom as needed */
 }
 
-.middle-title,
-.things-that-we-doo {
-    text-align: center;
+.middle-title h1:nth-of-type(2) {
+  margin-top: 0%; /* Adjust the margin top as needed */
 }
 
-.things-that-we-do{
+.middle-title h3 {
   text-align: center;
-  padding: 2% 0%;
+  padding-top: 1%;
+  margin-top: 2rem; /* Adjust the margin top as needed */
+  margin-bottom: 5px; /* Adjust the margin bottom as needed */
+}
+
+.middle-title h6 {
+  text-align: center;
+  font-size: x-small;
+  padding: 0%;
+  margin-top: 5px; /* Adjust the margin top as needed */
+}
+
+/* Update the grid layout */
+.word-block {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Define four columns */
+  grid-template-rows: auto;
+  grid-gap: 20px; /* Add some gap between grid items */
+}
+
+/* Update the grid area for each block */
+.block-1 {
+  grid-column: 1; /* Place block-1 in the first column */
+  justify-self: center; /* Center horizontally */
+  align-self: start; /* Align to the top vertically */
+  text-align: center;
+}
+
+.block-1 p {
+  padding-left: 1.5rem;
+  padding-right: 1.8rem;
+  line-height: 1rem;
+}
+
+.block-2 {
+  grid-column: 2; /* Place block-2 in the second column */
+  justify-self: center; /* Center horizontally */
+  align-self: start; /* Align to the top vertically */
+  text-align: center;
+}
+
+.block-2 p {
+  padding-left: 1.5rem;
+  padding-right: 1.8rem;
+  line-height: 1rem;
+}
+
+.block-3 {
+  grid-column: 3; /* Place block-3 in the third column */
+  justify-self: center; /* Center horizontally */
+  align-self: start; /* Align to the top vertically */
+  text-align: center;
+}
+
+.block-3 p {
+  padding-left: 1.5rem;
+  padding-right: 1.8rem;
+  line-height: 1rem;
+}
+
+.block-4 {
+  grid-column: 4; /* Place block-4 in the fourth column */
+  justify-self: center; /* Center horizontally */
+  align-self: start; /* Align to the top vertically */
+  text-align: center;
+}
+
+.block-4 p {
+  padding-left: 1.5rem;
+  padding-right: 1.8rem;
+  line-height: 1rem;
+}
+
+.Whats-up-lately h3 {
+  text-align: center;
+  padding: 0%;
+  margin-bottom: 1%;
 }
 
 body {
@@ -106,11 +184,11 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-template-areas:
+
     "header"
     "minion"
     "middleTitle"
     "things"
-    "wordBlock"
     "lately"
     "latestProject"
     "things-that-we-do"
@@ -160,6 +238,48 @@ p{
   font-size: x-small;
 }
 
+.sample-image {
+  width: 17rem;
+  max-width: 17rem;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+   justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  padding-left: 4rem;
+}
+
+.sample-image {
+  width: 100%; /* Ensure images fill the entire grid cell */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.color-bar {
+  width: 305%; /* Set the width of the color bar */
+  height: 8%; /* Set the height of the color bar */
+  background-color: #eaeaea; /* Set the background color to blue */
+  margin-top: 12%;
+}
+
+.color-bar::after {
+  content: "";
+  display: block;
+  width: 50%; /* Set the width of the gray section */
+  height: 100%;
+  background: linear-gradient(to right, #1cb1db 50%, transparent 50%); /* Create a linear gradient background with gray on the left and transparent on the right */
+}
+
+.latest-project{
+  margin-top: 5%;
+}
+
+.image-grid-2nd-row{
+  margin-top: 2%;
+}
+
+
 .things-that-we-do,
 .our-latest-project,
 .Whats-up-lately,
@@ -176,8 +296,49 @@ p{
   grid-area: thingsAbove;
 }
 
+.tab {
+overflow: hidden;
+border: 1px solid #ccc;
+background-color: #F1F1F1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+.tab button:hover {
+background-color: #ddd;
+}
+
+.tab button.active {
+   background-color: #ccc;
+  
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border:  1px solid #ccc;
+  border-top: none;
+}
+
+.tabOne {
+  display: block!important;
+}
+
 .logos-bar {
-  grid-area: logosBar;
+  text-align: center;
+}
+
+.logobackground{
+  background-color: #eee;
+
 }
 
 footer {
@@ -195,7 +356,7 @@ footer {
 }
 
 .home-link .home-icon {
-  max-height: 20px;
+  max-height: 30px;
 }
 
 header img {
@@ -209,136 +370,48 @@ width: 310%;
 justify-content: left;
 }
 
-.footer-block-1 {
-  #rectangle {
-    width: 200px;
-    height: 100px;
-    background: red;
-  }
-  #triangle-down {
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-top: 100px solid red;
-  }
-}
-footer section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.mainpage{
+    margin: 0 auto;
+    max-width: 70em;
 }
 
-.footer-block-1,
-.footer-block-2,
-.footer-block-3,
-.footer-block-4 {
-  flex: 1;
-  margin: 0 10px;
+.accordiantab{
+   max-width: 50%;
+   float: left;
+   min-width: 49%;
+   min-height: 20em;
 }
 
-/* Media query for screens larger than 768px (adjust the breakpoint as needed) */
-@media screen and (min-width: 768px) {
-  .footer-block-1,
-  .footer-block-2,
-  .footer-block-3,
-  .footer-block-4 {
-    flex: 0 0 23%; /* Adjust the percentage based on your layout preferences */
-  }
+.tabsection{
+  max-width: 50%;
+  float: right;
+  min-width: 49%;
+  min-height: 20em;
 }
 
-.rectangle1 {
-  width: 250px;
-  height: 3px;
-  background: green;
+.panel{
+  padding: 0 2em;
+  display: none;
+  background-color: white;
+  overflow: hidden;
 }
 
-.triangle-down-1 {
-  width: 0px;
-      height: 2px;
-      border-left: 8px solid transparent;
-      border-right: 8px solid transparent;
-      border-top: 8px solid green;
-      margin-left: 0.5cm;
+.accordian{
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 2em;
+  width: 100%;
+  border:none;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
 }
 
-.rectangle2 {
-  width: 250px;
-  height: 3px;
-  background: yellow;
+.active, .accordian:hover{
+  background-color: #1cb1db;
 }
 
-.triangle-down-2 {
-  width: 0px;
-      height: 2px;
-      border-left: 8px solid transparent;
-      border-right: 8px solid transparent;
-      border-top: 8px solid yellow;
-      margin-left: 0.5cm;
+.panelone{
+  display: block;
 }
-
-.rectangle3 {
-  width: 250px;
-  height: 3px;
-  background: red;
-}
-
-.triangle-down-3 {
-  width: 0px;
-      height: 2px;
-      border-left: 8px solid transparent;
-      border-right: 8px solid transparent;
-      border-top: 8px solid red;
-      margin-left: 0.5cm;
-}
-
-.rectangle4 {
-  width: 250px;
-  height: 3px;
-  background: blue;
-}
-
-.triangle-down-4 {
-  width: 0px;
-      height: 2px;
-      border-left: 8px solid transparent;
-      border-right: 8px solid transparent;
-      border-top: 8px solid blue;
-      margin-left: 0.5cm;
-}
-
-.footer-block-2 {
-  text-align: center;
-}
-
-.photo-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.flickr-photos {
-  width: 30%; 
-  margin: 10px; 
-  border: 1px solid #ddd; 
-  box-sizing: border-box;
-}
-
-/* CSS */
-
-.footer-block-3 {
-  text-align: center;
-}
-
-.tweet-container {
-  display: flex;
-  align-items: center;
-}
-
-.twitter-icon-circle {
-  width: 30px; 
-  height: 30px; 
-  margin-right: 10px; 
-}
-
-
