@@ -60,7 +60,6 @@ a.home-link {
   padding: .6rem 2.6rem;
   font-size: 1rem;
   font-weight: bold;
-  font-family: /* Your font family */;
   margin:  .2rem;
 }
 
@@ -72,7 +71,6 @@ a.home-link {
   padding: .6rem 2.6rem;
   font-size: 1rem;
   font-weight: bold;
-  font-family: /* Your font family */;
   margin:  .2rem;
 }
 
@@ -84,47 +82,44 @@ a.home-link {
   padding: .6rem 2.6rem;
   font-size: 1rem;
   font-weight: bold;
-  font-family: /* Your font family */;
   margin:  .2rem;
 }
 
 .middle-title h1 {
   text-align: center;
   padding: 0%;
-  margin-bottom: 1%; /* Adjust the margin bottom as needed */
+  margin-bottom: 1%;
 }
 
 .middle-title h1:nth-of-type(2) {
-  margin-top: 0%; /* Adjust the margin top as needed */
+  margin-top: 0%; 
 }
 
 .middle-title h3 {
   text-align: center;
   padding-top: 1%;
-  margin-top: 2rem; /* Adjust the margin top as needed */
-  margin-bottom: 5px; /* Adjust the margin bottom as needed */
+  margin-top: 2rem; 
+  margin-bottom: 5px; 
 }
 
 .middle-title h6 {
   text-align: center;
   font-size: x-small;
   padding: 0%;
-  margin-top: 5px; /* Adjust the margin top as needed */
+  margin-top: 5px; 
 }
 
-/* Update the grid layout */
 .word-block {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Define four columns */
+  grid-template-columns: repeat(4, 1fr); 
   grid-template-rows: auto;
-  grid-gap: 20px; /* Add some gap between grid items */
+  grid-gap: 20px; 
 }
 
-/* Update the grid area for each block */
 .block-1 {
-  grid-column: 1; /* Place block-1 in the first column */
-  justify-self: center; /* Center horizontally */
-  align-self: start; /* Align to the top vertically */
+  grid-column: 1; 
+  justify-self: center; 
+  align-self: start; 
   text-align: center;
 }
 
@@ -135,9 +130,9 @@ a.home-link {
 }
 
 .block-2 {
-  grid-column: 2; /* Place block-2 in the second column */
-  justify-self: center; /* Center horizontally */
-  align-self: start; /* Align to the top vertically */
+  grid-column: 2; 
+  justify-self: center; 
+  align-self: start; 
   text-align: center;
 }
 
@@ -148,9 +143,9 @@ a.home-link {
 }
 
 .block-3 {
-  grid-column: 3; /* Place block-3 in the third column */
-  justify-self: center; /* Center horizontally */
-  align-self: start; /* Align to the top vertically */
+  grid-column: 3; 
+  justify-self: center; 
+  align-self: start; 
   text-align: center;
 }
 
@@ -161,9 +156,9 @@ a.home-link {
 }
 
 .block-4 {
-  grid-column: 4; /* Place block-4 in the fourth column */
-  justify-self: center; /* Center horizontally */
-  align-self: start; /* Align to the top vertically */
+  grid-column: 4; 
+  justify-self: center; 
+  align-self: start; 
   text-align: center;
 }
 
@@ -245,30 +240,30 @@ p{
 
 .image-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
-   justify-content: center; /* Center items horizontally */
-  align-items: center; /* Center items vertically */
+  grid-template-columns: repeat(3, 1fr); 
+   justify-content: center; 
+  align-items: center; 
   padding-left: 4rem;
 }
 
 .sample-image {
-  width: 100%; /* Ensure images fill the entire grid cell */
-  height: auto; /* Maintain aspect ratio */
+  width: 100%; 
+  height: auto; 
 }
 
 .color-bar {
-  width: 305%; /* Set the width of the color bar */
-  height: 8%; /* Set the height of the color bar */
-  background-color: #eaeaea; /* Set the background color to blue */
+  width: 305%; 
+  height: 8%; 
+  background-color: #eaeaea; 
   margin-top: 12%;
 }
 
 .color-bar::after {
   content: "";
   display: block;
-  width: 50%; /* Set the width of the gray section */
+  width: 50%; 
   height: 100%;
-  background: linear-gradient(to right, #1cb1db 50%, transparent 50%); /* Create a linear gradient background with gray on the left and transparent on the right */
+  background: linear-gradient(to right, #1cb1db 50%, transparent 50%); 
 }
 
 .latest-project{
